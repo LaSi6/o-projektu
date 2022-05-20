@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+/*společné styly*/
 * {
   margin: 0;
   padding: 0;
@@ -20,23 +22,33 @@ html {
 .body {
   height: 100vh;
 }
+
 .header,
 .main,
-.footer {
+.main--trainers,
+.footer{
   display: flex;
   flex-direction: column;
+  width: 380px;
+  justify-content: center;
   align-items: center;
 }
+
+/*Hlavička*/
 .header {
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 50px;
+  margin: 0px;
 }
 
 h1 {
   font-weight: 1000;
   color: white;
-  font-size: 48px;
+  font-size: 32px;
+  text-align: center;
 }
+
+/*menu*/
 .menu {
   display: flex;
   flex-direction: row;
@@ -44,19 +56,21 @@ h1 {
   padding-inline-start: 0px;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.692);
+  width: 380px;
 }
 
 .menu--item {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  padding-right: 40px;
+  padding: 3%;
   padding-left: 40px;
   align-items: center;
 }
+
 .menu--link {
   display: flex;
   flex-direction: column;
+  font-size: 16px;
 }
 
 .icon--menu {
@@ -64,16 +78,56 @@ h1 {
   aspect-ratio: 1/1;
 }
 
-.main {
-  display: flex;
-  width: 450px;
-  text-align: center;
+.icon--menu {
+    filter: invert(48%) sepia(97%) saturate(451%) hue-rotate(357deg)
+      brightness(95%) contrast(98%);
+  }
+
+/*hlavní část*/
+h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(214, 131, 7);
+}
+.main,
+.main--trainers {
   background-color: rgba(255, 255, 255, 0.692);
-  padding: 30px;
+  font-size: 16px;
+  padding-bottom: 20px;
 }
-.menu--container {
-  width: 450px;
+
+.trainer--Tomas,
+.trainer--Denisa{
+    padding-right: 5px;
 }
+
+p {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.image{
+    width: 60%;
+    height: 100%;
+    border-radius: 20%;
+    padding-bottom: 10px;
+}
+
+.trainer {
+    display: flex;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+  padding: 20px;
+}
+
+/*Odkazy*/
 .menu--link,
 .footer--link,
 .main--link {
@@ -85,64 +139,43 @@ h1 {
 .main--link:hover {
   color: rgb(91, 160, 13);
 }
-p {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 
-.footer {
-  padding: 20px;
-}
-
-.icon--menu {
-  filter: invert(48%) sepia(97%) saturate(451%) hue-rotate(357deg)
-    brightness(95%) contrast(98%);
-}
 
 @media (min-width: 900px) {
-  .menu--container {
+  .main,
+  .main--trainers,
+  .menu,
+  .header,
+  .footer {
     width: 800px;
-    text-align: center;
+    font-size: 18px;
+  }
+
+  .menu--item{
+      font-size: 18px;
+      padding-right: 40px;
+      padding-left: 40px;
+  }
+
+  h1{
+      font-size: 48px;
+  }
+
+  .trainer{
+      flex-direction: row;
+  }
+
+  .trainer--Denisa,
+  .trainer--Tomas{
+      text-align: left;
+  }
+
+  .image{
+      width: 30%;
+      padding-bottom: 0px;
+
   }
 }
 
-@media (min-width: 900px) {
-  .main {
-    width: 800px;
-    text-align: center;
-  }
-}
 
-.image {
-  max-width: 20%;
-  border-radius: 20%;
-}
 
-.images {
-  display: flex;
-  padding: 30px;
-  margin: 30px;
-}
-
-.main--trainers {
-  display: flex;
-  flex-direction: column;
-}
-
-.trainer--Denisa {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 80%;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.trainer--Tomas {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 80%;
-  padding-right: 30px;
-  padding-left: 30px;
-}
