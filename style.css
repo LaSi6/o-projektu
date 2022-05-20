@@ -97,7 +97,8 @@ h2{
 }
 
 .trainer--Tomas,
-.trainer--Denisa{
+.trainer--Denisa,
+.map--text{
     padding-right: 5px;
 }
 
@@ -114,7 +115,8 @@ p {
     padding-bottom: 10px;
 }
 
-.trainer {
+.trainer,
+.map {
     display: flex;
     text-align: center;
     padding-left: 30px;
@@ -161,12 +163,14 @@ p {
       font-size: 48px;
   }
 
-  .trainer{
+  .trainer,
+  .map{
       flex-direction: row;
   }
 
   .trainer--Denisa,
-  .trainer--Tomas{
+  .trainer--Tomas,
+  .map--text{
       text-align: left;
   }
 
