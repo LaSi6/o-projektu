@@ -116,18 +116,33 @@ p {
 .image {
   max-width: 20%;
   border-radius: 20%;
-  padding-left: 30px;
+}
+
+.images {
+  display: flex;
+  padding: 30px;
+  margin: 30px;
 }
 
 .main--trainers {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.trainer {
+.trainer--Denisa {
   display: flex;
-  flex-direction: row;
-  text-align: left;
-  max-width: 45%;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.trainer--Tomas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+  padding-right: 30px;
   padding-left: 30px;
 }
