@@ -112,3 +112,22 @@ p {
     text-align: center;
   }
 }
+
+.image {
+  max-width: 20%;
+  border-radius: 20%;
+  padding-left: 30px;
+}
+
+.main--trainers {
+  display: flex;
+  flex-direction: row;
+}
+
+.trainer {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  max-width: 45%;
+  padding-left: 30px;
+}
