@@ -112,8 +112,7 @@ p {
 }
 
 .trainer,
-.map,
-.project {
+.map {
     display: flex;
     text-align: center;
     padding-left: 20px;
@@ -121,7 +120,11 @@ p {
     flex-direction: column;
     align-items: center;
 }
-
+.project{
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .footer {
   padding: 20px;
 }
@@ -160,8 +163,7 @@ p {
   }
 
   .trainer,
-  .map,
-  .project{
+  .map{
       flex-direction: row;
   }
 
